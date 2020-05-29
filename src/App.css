@@ -1,38 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+
+* {
+    font-family: 'Source Sans Pro';
+    color: var(--text-gray);
+}
+
 .App {
-  text-align: center;
+    padding: 50px;
+    width: 100%;
+    background-color: #202124;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+    margin: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+    --text-gray: #f5f5f5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #5f6368;
+    padding: 30px 50px;
+    height: 500px;
+    width: 300px;
+    border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.container h1 {
+    text-decoration: underline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+    color: black;
+}
+
+input[type='checkbox'] {
+    /*background-color: #202124;*/
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button {
+    color: black;
 }
