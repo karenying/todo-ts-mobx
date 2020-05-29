@@ -7,5 +7,11 @@ import '../styles/TodoList.css';
 export const TodoList = () => {
     const todoList = useStore();
 
-    return useObserver(() => <div className='todo-list'></div>);
+    return useObserver(() => (
+        <div className='open-todos'>
+            {todoList.openTodos.map((todo) => (
+                <TodoItem key={`${todo.id}-${todo.text}`} todo={todo} />
+            ))}
+        </div>
+    ));
 };

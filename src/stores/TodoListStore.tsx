@@ -19,7 +19,7 @@ export class TodoListStore {
     };
 
     @computed
-    get finishedTodos(): TodoItemStore[] {
+    get completedTodos(): TodoItemStore[] {
         return this.list.filter((todo) => todo.isCompleted);
     }
 
